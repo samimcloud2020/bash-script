@@ -1,0 +1,46 @@
+C-Styled for loops
+As said earlier, we need to use the variables inside the for loops to 
+iterate over a range of elements. And thus, the C-styled for loops play a very important role.
+
+#!/bin/bash
+n=7
+for (( i=1; i<=$n; i++ ));
+do
+  echo $i
+done  
+---------------------------------------
+  Output:
+
+1
+2
+3
+4
+5
+6
+7
+  -----------------------------------------------------
+  C-styled for loops are the loops that have 3 parts,
+  
+the initializing iterator,
+the incrementor/decrementer, 
+and the end condition. 
+  --------------------------------------------------------------------------------------------------------------------------------
+  we have used the unary operator (++) to increment the value by one which is equivalent to “i=i+1”.
+  
+  Thus we can use statements like i+=2, i–,++i, and so on and so forth.
+  ---------------------------------------------------------------------------------------------------------
+  #!/bin/bash
+n=7
+for (( i=1; i<=$n; i+=2 ));
+do
+  echo $i
+done  
+----------------------------------------------
+  Output:
+
+1
+3
+5
+7
+  ---------------------------------------------------------
+  
